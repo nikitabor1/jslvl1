@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 2</title>
+</head>
+
+<body>
+    <script>
+        //Задание 5. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1, arg2 — значения аргументов, operation — строка с названием операции. В зависимости от переданного значения выполнить одну из арифметических операций (использовать функции из пункта 4 и вернуть полученное значение (применить switch).
+
+        arg1 = +prompt("введите аргумент a");
+        arg2 = +prompt("введите аргумент b");
+        operation = prompt("введите операцию: для суммы - 'sum', для разности - 'minus', для умножения - 'multi', для деления - 'at'");
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case 'sum':
+                    return (funSum(arg1, arg2));
+                case 'minus':
+                    return (funMinus(arg1, arg2));
+                case 'at':
+                    return (funAt(arg1, arg2));
+                case 'multi':
+                    return (funMulti(arg1, arg2));
+                default:
+                    alert("операция введена неверно");
+            }
+        };
+
+        function funSum(arg1, arg2) {
+            return arg1 + arg2;
+        };
+
+        function funAt(arg1, arg2) {
+            return Math.round((arg1 / arg2) * 100) / 100;
+        };
+
+        function funMulti(arg1, arg2) {
+            return arg1 * arg2;
+        };
+
+        function funMinus(arg1, arg2) {
+            return arg1 - arg2;
+        };
+
+        alert(mathOperation(arg1, arg2, operation));
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Урок 2</title>
+</head>
+
+<body>
+    <script>
+        //Задание 4. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. Обязательно использовать оператор return.
+
+        a = +prompt("введите аргумент a");
+        b = +prompt("введите аргумент b");
+
+
+        function funSum(a, b) {
+            return a + b;
+        };
+
+        function funAt(a, b) {
+            return Math.round(a / b);
+        };
+
+        function funMulti(a, b) {
+            return a * b;
+        };
+
+        function funMinus(a, b) {
+            return a - b;
+        };
+
+        alert(
+            "сумма: " + funsum(a, b) + ";\n" + "деление: " + funat(a, b) + ";\n" + "умножение: " + funmulti(a, b) + ";\n" + "разница: " + funminus(a, b) + "."
+        );
+
+    </script>
+
+</body>
+
+</html>
