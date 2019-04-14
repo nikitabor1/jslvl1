@@ -27,7 +27,7 @@ let Basket = {
 
     },
     putProduct(item) {
-        проверить есть ли такой товар в корзине: если есть, то не добавлять а добавить +1 в свойство count,добавить товар в корзину
+       // проверить есть ли такой товар в корзине: если есть, то не добавлять а добавить +1 в свойство count,добавить товар в корзину
         let ind = this.goodList.findIndex(function (elem) {
             return elem.productname === item.productname;
         });
